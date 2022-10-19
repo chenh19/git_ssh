@@ -1,6 +1,6 @@
 # Git SSH
-A script tool to set up SSH for GitHub  
-*Current version: v1.0.0*
+**A script tool to set up SSH for GitHub**  
+*Current version: v1.0.0*  
 
 ### How to use:
 - Install: connect to internet and execute the below command in terminal
