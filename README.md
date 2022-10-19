@@ -1,5 +1,5 @@
 # Git SSH
-**A script tool to set up SSH for GitHub on Linux**  
+**A script tool to quickly set up SSH for GitHub on Linux**  
 *Current version: v1.0.2*  
 
 ### How to use:
