@@ -13,10 +13,12 @@ cd ~
 # detect ssh keys
 if [ -z "$(ls -al ~/.ssh | grep id_ed25519)" ]
 then
-  # ask whether to set up an ssh key for github
+
+  ## ask whether to set up an ssh key for github
   sudo echo ""
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to set up an SSH key for your GitHub account? [y/n/c]'$TEXT_RESET)"$' \n' choice
   case "$choice" in
+  
     y|Y ) # notify start
         sudo echo ""
         echo -e "${TEXT_YELLOW}Setting up Git SSH key...${TEXT_RESET} \n" && sleep 1
@@ -33,11 +35,11 @@ then
         read -p "$(echo -e $TEXT_YELLOW'Please enter your GitHub email address: '$TEXT_RESET)"$' \n' email
         git config --global user.email $email
                 
-        # create a key if does not exist
+        # create a key if it does not exist
         echo -e " \n${TEXT_YELLOW}When asked "Enter a file in which to save the key", please ${TEXT_GREEN}press [Enter]${TEXT_YELLOW} (default file location). Then, please ${TEXT_GREEN}input a passphrase${TEXT_YELLOW} (anything you can remember).${TEXT_RESET} \n"
         ssh-keygen -t ed25519 -C $email
         
-        # add SSH key to ssh-agent-
+        # add SSH key to ssh-agent
         eval `ssh-agent -s`
         ssh-add ~/.ssh/id_ed25519
         
@@ -52,5 +54,7 @@ then
         
     * ) # notify cancellation
         echo -e " \n${TEXT_YELLOW}Git SSH not configured.${TEXT_RESET} \n" && sleep 5;;
+        
   esac
+  
 fi
