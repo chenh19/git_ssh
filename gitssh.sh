@@ -60,6 +60,6 @@ then
 
 else
   
-  echo -e " \n${TEXT_YELLOW}Git SSH already configured.${TEXT_RESET} \n" && sleep 5
+  echo -e " \n${TEXT_YELLOW}Git SSH already configured.${TEXT_RESET} \n" && sleep 1
   
 fi
