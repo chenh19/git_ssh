@@ -1,4 +1,4 @@
-# git_ssh
+# Git SSH
 A script tool to set up ssh for GitHub
 
 ### How to use:
