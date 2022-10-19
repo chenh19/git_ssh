@@ -7,7 +7,8 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # set working directory
-echo -e " \n${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
+sudo echo ""
+echo -e "${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
 [ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
 cd ~
 
@@ -16,7 +17,6 @@ if [ -z "$(ls -al ~/.ssh | grep id_ed25519)" ]
 then
 
   # ask whether to set up an ssh key for github
-  sudo echo ""
   read -n1 -s -r -p "$(echo -e $TEXT_YELLOW'Would you like to set up an SSH key for your GitHub account? [y/n/c]'$TEXT_RESET)"$' \n' choice
   case "$choice" in
 
@@ -60,6 +60,6 @@ then
 
 else
 
-  echo -e " \n${TEXT_GREEN}Git SSH already configured.${TEXT_RESET} \n" && sleep 1
+  echo -e "${TEXT_GREEN}Git SSH already configured.${TEXT_RESET} \n" && sleep 1
 
 fi
