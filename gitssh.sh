@@ -54,8 +54,12 @@ then
         echo -e " \n${TEXT_GREEN}You may copy the above key and add it to your GitHub. Or, it's also save in ~/Documents/gitssh.txt file, and you may work on it later.${TEXT_RESET} \n" && sleep 5;;
         
     * ) # notify cancellation
-        echo -e " \n${TEXT_YELLOW}Git SSH not configured.${TEXT_RESET} \n" && sleep 5;;
+        echo -e " \n${TEXT_YELLOW}Git SSH not configured.${TEXT_RESET} \n" && sleep 1;;
         
   esac
+
+else
+  
+  echo -e " \n${TEXT_YELLOW}Git SSH already configured.${TEXT_RESET} \n" && sleep 5
   
 fi
