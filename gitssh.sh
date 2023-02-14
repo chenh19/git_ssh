@@ -9,8 +9,8 @@ TEXT_RESET='\e[0m'
 # set working directory
 sudo echo ""
 echo -e "${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
-[ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
 [ ! -d ~/Licenses/ ] && mkdir ~/Licenses/
+[ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
 cd ~
 
 # detect ssh keys
