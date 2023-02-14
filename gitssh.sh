@@ -10,6 +10,7 @@ TEXT_RESET='\e[0m'
 sudo echo ""
 echo -e "${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
 [ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
+[ ! -d ~/Licenses/ ] && mkdir ~/Licenses/
 cd ~
 
 # detect ssh keys
@@ -47,11 +48,11 @@ then
         # get the key
         echo -e " \n${TEXT_GREEN}All done! Git SSH key: ${TEXT_RESET} \n"
         cat ~/.ssh/id_ed25519.pub
-        cat ~/.ssh/id_ed25519.pub > ~/Documents/gitssh.txt
+        cat ~/.ssh/id_ed25519.pub > ~/Licenses/gitssh.txt
 
         # notify end
         unset email fullname
-        echo -e " \n${TEXT_GREEN}You may copy the above key and add it to your GitHub. Or, it's also saved in ~/Documents/gitssh.txt file in case you want to work on it later.${TEXT_RESET} \n" && sleep 5;;
+        echo -e " \n${TEXT_GREEN}You may copy the above key and add it to your GitHub. Or, it's also saved in ~/Licenses/gitssh.txt file in case you want to work on it later.${TEXT_RESET} \n" && sleep 5;;
 
     * ) # notify cancellation
         echo -e " \n${TEXT_YELLOW}Git SSH not configured.${TEXT_RESET} \n" && sleep 1;;
