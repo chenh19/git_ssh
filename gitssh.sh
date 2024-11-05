@@ -31,7 +31,7 @@ then
         git config --global user.email $email
 
         # create a key if it does not exist
-        echo -e "\n${TEXT_GREEN}Please enter your passphrase (anything you can remember): ${TEXT_RESET}\n"
+        echo -e "\n${TEXT_YELLOW}Please enter your passphrase (anything you can remember): ${TEXT_RESET}\n"
         ssh-keygen -t ed25519 -C "$email" -f ~/.ssh/id_ed25519
 
         # add SSH key to ssh-agent
