@@ -42,7 +42,7 @@ then
         #echo -e " \n${TEXT_YELLOW}When asked "Enter a file in which to save the key", please ${TEXT_GREEN}press [Enter]${TEXT_YELLOW} (default file location). Then, please ${TEXT_GREEN}input a passphrase${TEXT_YELLOW} (anything you can remember).${TEXT_RESET} \n"
         #ssh-keygen -t ed25519 -C $email
         echo -e " \n${TEXT_GREEN}Please enter your passphrase (anything you can remember): ${TEXT_RESET} \n"
-        ssh-keygen -t ed25519 -C "$email" -f ~/.ssh/id_ed25519
+        ssh-keygen -t ed25519 -C "$email" -f ~/.ssh/id_ed25519 >/dev/null 2>&1
 
         # add SSH key to ssh-agent
         eval `ssh-agent -s`
