@@ -22,8 +22,8 @@ then
   case "$choice" in
 
     y|Y ) # notify start
-        echo ""
-        echo -e "${TEXT_YELLOW}Setting up Git SSH key...${TEXT_RESET} \n" && sleep 1
+        #echo ""
+        #echo -e "${TEXT_YELLOW}Setting up Git SSH key...${TEXT_RESET} \n" && sleep 1
 
         # check for existing keys
         #ls -al ~/.ssh
@@ -40,8 +40,6 @@ then
         # create a key if it does not exist
         #echo -e " \n${TEXT_YELLOW}When asked "Enter a file in which to save the key", please ${TEXT_GREEN}press [Enter]${TEXT_YELLOW} (default file location). Then, please ${TEXT_GREEN}input a passphrase${TEXT_YELLOW} (anything you can remember).${TEXT_RESET} \n"
         #ssh-keygen -t ed25519 -C $email
-        echo -e " \n${TEXT_YELLOW}Please enter your passphrase: ${TEXT_RESET} \n"
-        printf "\n" | ssh-keygen -t ed25519 -C $email
 
         # add SSH key to ssh-agent
         eval `ssh-agent -s`
