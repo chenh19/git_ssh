@@ -7,7 +7,7 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # set working directory
-sudo echo ""
+echo ""
 echo -e "${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
 [ ! -d ~/Licenses/ ] && mkdir ~/Licenses/
 [ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
@@ -22,7 +22,7 @@ then
   case "$choice" in
 
     y|Y ) # notify start
-        sudo echo ""
+        echo ""
         echo -e "${TEXT_YELLOW}Setting up Git SSH key...${TEXT_RESET} \n" && sleep 1
 
         # check for existing keys
