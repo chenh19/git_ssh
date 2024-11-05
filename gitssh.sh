@@ -16,18 +16,18 @@ if [ -z "$(ls -al ~/.ssh | grep id_ed25519)" ]
 then
 
   # ask whether to set up an ssh key for github
-  read -n1 -s -r -p "\n$(echo -e $TEXT_YELLOW'Would you like to set up an SSH key for your GitHub account? [y/n/c]'$TEXT_RESET)"$'\n' choice
+  read -n1 -s -r -p $'\n'"$(echo -e $TEXT_YELLOW'Would you like to set up an SSH key for your GitHub account? [y/n/c]'$TEXT_RESET)"$'\n' choice
   case "$choice" in
 
     y|Y ) # check for existing keys
         #ls -al ~/.ssh
 
         # ask for name
-        read -p "\n$(echo -e $TEXT_YELLOW'Please enter your full name: '$TEXT_RESET)"$'\n' fullname
+        read -p $'\n'"$(echo -e $TEXT_YELLOW'Please enter your full name: '$TEXT_RESET)"$'\n' fullname
         git config --global user.name $fullname
 
         # ask for email
-        read -p "\n$(echo -e $TEXT_YELLOW'Please enter your GitHub email address: '$TEXT_RESET)"$'\n' email
+        read -p $'\n'"$(echo -e $TEXT_YELLOW'Please enter your GitHub email address: '$TEXT_RESET)"$'\n' email
         git config --global user.email $email
 
         # create a key if it does not exist
@@ -39,7 +39,7 @@ then
         ssh-add ~/.ssh/id_ed25519
 
         # get the key
-        echo -e " \n${TEXT_GREEN}All done! Git SSH key: ${TEXT_RESET} \n"
+        echo -e "\n${TEXT_GREEN}All done! Git SSH key: ${TEXT_RESET}\n"
         cat ~/.ssh/id_ed25519.pub
         cat ~/.ssh/id_ed25519.pub > ~/Licenses/gitssh.txt
 
