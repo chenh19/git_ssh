@@ -7,7 +7,7 @@ TEXT_GREEN='\e[1;32m'
 TEXT_RESET='\e[0m'
 
 # set working directory
-#echo ""
+echo ""
 #echo -e "${TEXT_YELLOW}Initializing...${TEXT_RESET} \n" && sleep 1
 [ ! -d ~/Licenses/ ] && mkdir ~/Licenses/
 [ ! -d ~/.ssh/ ] && mkdir ~/.ssh/
@@ -29,6 +29,7 @@ then
         #ls -al ~/.ssh
 
         # ask for name
+        echo ""
         read -p "$(echo -e $TEXT_YELLOW'Please enter your full name: '$TEXT_RESET)"$' \n' fullname
         git config --global user.name $fullname
 
