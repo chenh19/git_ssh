@@ -45,6 +45,7 @@ then
 
         # config default branch
         git config --global init.defaultBranch main
+        git config --global pull.rebase true
 
         # notify end
         unset email fullname
