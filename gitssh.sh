@@ -43,6 +43,9 @@ then
         cat ~/.ssh/id_ed25519.pub
         cat ~/.ssh/id_ed25519.pub > ~/Licenses/gitssh.txt
 
+        # config default branch
+        git config --global init.defaultBranch main
+
         # notify end
         unset email fullname
         echo -e "\n${TEXT_GREEN}You may copy the above key and add it to your GitHub. Or, it's also saved in ~/Licenses/gitssh.txt file in case you want to work on it later.${TEXT_RESET}\n" && sleep 5;;
