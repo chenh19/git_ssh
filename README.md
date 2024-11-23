@@ -16,12 +16,12 @@
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-1.png" width=80%>
   </p>
   
-  - Go to "**SSH and GPG keys**" and click "**New SSH Key**":
+  - Go to "**SSH and GPG keys**" and click "**New SSH key**":
   <p align="center">
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-2.png" width=80%>
   </p>
   
-  - Enter "**Title**", paste in the "**Key**", and click "**Add SSH Key**":
+  - Enter "**Title**", paste in the "**Key**", and click "**Add SSH key**":
   <p align="center">
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-3.png" width=80%>
   </p>
