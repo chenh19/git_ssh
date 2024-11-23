@@ -4,7 +4,7 @@
 
 ### How to use:
 
-- **Generate an SSH key:** connect to internet and execute the below command in terminal
+- **Generate a new SSH key:** connect to internet and execute the below command in terminal
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)"
 ```
