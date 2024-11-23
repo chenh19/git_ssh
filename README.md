@@ -9,7 +9,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)"
 ```
 
-- **Add the SSH key to the GitHub**:
+- **Add the SSH key to your GitHub**:
   
   - Go to GitHub "**Settings**":
   <p align="center">
@@ -25,6 +25,8 @@
   <p align="center">
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-3.png" width=80%>
   </p>
+  
+  - For more information: [Adding a new SSH key to your GitHub account](https://docs.github.com/en/enterprise-cloud@latest/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 - **Remove the SSH key:** execute the below command in terminal
 ```
