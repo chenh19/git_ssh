@@ -11,7 +11,7 @@
 
 - **Add the SSH key to your GitHub**:
   
-  - Go to GitHub "**Settings**":
+  - Click your profile photo and go to "**Settings**":
   <p align="center">
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-1.png" width=80%>
   </p>
