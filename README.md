@@ -9,7 +9,7 @@
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)"
 ```
 
-- **Add the SSH key to your GitHub**:
+- **Add the SSH key to your GitHub account**:
   
   - Click your profile photo and go to "**Settings**":
   <p align="center">
