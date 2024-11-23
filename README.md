@@ -21,7 +21,7 @@
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-2.png" width=80%>
   </p>
   
-  - Enter "**Title**", paste in the "**Key**", and click "**Add SSH key**":
+  - Enter the "**Title**", paste in the "**Key**", and click "**Add SSH key**":
   <p align="center">
     <img src="https://raw.githubusercontent.com/chenh19/git_ssh/refs/heads/main/images/1-3.png" width=80%>
   </p>
