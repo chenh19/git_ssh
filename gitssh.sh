@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # This script configures git ssh (ref: https://youtu.be/YnSMYgIybFU)
 
 # set terminal font color
